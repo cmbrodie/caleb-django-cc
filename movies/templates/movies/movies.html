@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Movies</title>
+    <style>
+        h1 {font-size: xx-large;}
+        li {color: blueviolet; font-size: large;}
+    </style>
+</head>
+<body>
+    <h1>Movies</h1>
+    <ul>
+        {% for movie in movies%}
+        <li>{{movie.title}}</li>
+        {% endfor %}
+    </ul>
+    
+</body>
+</html>
