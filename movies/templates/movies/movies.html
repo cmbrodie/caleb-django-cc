@@ -5,15 +5,16 @@
     <style>
         h1 {font-size: xx-large;}
         li {color: blueviolet; font-size: large;}
+        li:hover {color: aquamarine;}
     </style>
 </head>
 <body>
     <h1>Movies</h1>
     <ul>
         {% for movie in movies%}
-        <li>{{movie.title}}</li>
+        <li><a href="{{movie.id}}">{{movie.title}}</a></li>
         {% endfor %}
     </ul>
-    
+    <a href="/movies/add">Add a Movie</a>
 </body>
 </html>

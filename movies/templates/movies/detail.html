@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Details for {{movie}}</title>
+    <style>
+        h1 {font-size: xx-large;}
+        li {color: blueviolet; font-size: large;}
+    </style>
+</head>
+<body>
+    <h4>Movie Detail</h4>
+
+    {{movie.title}}
+    <br>
+    {{movie.year}}
+
+    <a href="/movies/delete/{{movie.id}}">Delete</a>
+
+    
+</body>
+</html>
